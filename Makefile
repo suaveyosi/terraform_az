@@ -33,7 +33,7 @@ plan: init update ## Runs a plan. Note that in Terraform < 0.7.0 this can create
 	@terraform plan -input=true -refresh=true -var-file=vars/$(ENV)/inputs.tfvars -var "environment=${ENV}" -var "az_region=${az_region}"
 
 plan-destroy: init update ## Shows what a destroy would do.
-	@terraform plan -input=false -refresh=true -module-depth=-1 -destroy -var-file=vars/$(ENV)/inputs.tfvars -var "environment=${ENV}" -var "az_region=${az_region}"
+	@terraform plan -input=false -refresh=trueyes -destroy -var-file=vars/$(ENV)/inputs.tfvars -var "environment=${ENV}" -var "az_region=${az_region}"
 
 show: init ## Shows a module
 	@terraform show -module-depth=-1

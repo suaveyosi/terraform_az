@@ -1,4 +1,5 @@
 resource "azurerm_network_security_group" "network_security_group_vnet1" {
+  # Those vars declared as null shouldn't be necessary but there is a bug that requires them
     name        = var.nsg_name
     resource_group_name = local.resource_group_name
     location    = var.az_region

@@ -14,5 +14,4 @@ vnet1_subnets = {
     subnet2 = "10.0.2.0/24"
     subnet3 = "10.0.3.0/24"
 }
-subnet_name = "subneta"
-subnet_range = "10.0.5.0/24"
+

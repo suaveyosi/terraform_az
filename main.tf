@@ -22,9 +22,10 @@ module "one_vnet" {
   nsg_name = var.nsg_name
   vnet_name = var.vnet_name
   vnet_range = var.vnet_range
-  subnet_name = var.subnet_name
-  subnet_range = var.subnet_range
   vnet1_subnets = var.vnet1_subnets
+  machine_size = var.machine_size
+  admin_user = var.admin_user
+  admin_pass = var.admin_pass
 
 }
 

@@ -4,6 +4,7 @@ variable "vnet_name" {}
 variable "environment" {}
 variable "nsg_name" {}
 variable "vnet_range" {}
-variable "subnet_name" {}
-variable "subnet_range" {}
 variable "vnet1_subnets" {}
+variable "machine_size" {}
+variable "admin_user" {}
+variable "admin_pass" {}

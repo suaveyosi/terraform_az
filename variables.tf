@@ -30,19 +30,26 @@ variable "vnet_range" {
   description = "VNET ip range"
   type        = string
 }
-
-variable "subnet_name" {
-  description = "Subnet name"
-  type        = string
-}
-
-variable "subnet_range" {
-  description = "Subnet range"
-  type        = string
-}
-
 variable "vnet1_subnets" {
   description = "Dictionary with all subnets"
   type        = map
   default     = {}
+}
+
+variable "machine_size" {
+  description = "Size of the VM"
+  type = string
+  default = "DS1_v2"
+}
+
+variable "admin_user" {
+  description = "Admin user to control machines"
+  type = string
+  default = "adminuser"
+}
+
+variable "admin_pass" {
+  description = "Admin pass to admin user"
+  type = string
+  default = "QA_T3st_123."
 }
