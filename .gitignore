@@ -1,3 +1,4 @@
 .history/
 .terraform.lock.hcl
 .terraform/
+terraform.tfstate*

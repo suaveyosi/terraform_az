@@ -13,8 +13,8 @@ provider "azurerm" {
   features {}
 }
 
-module "one_subnet" {
-  source = "./one_subnet"
+module "one_vnet" {
+  source = "./one_vnet"
 
   resource_group = var.resource_group
   az_region = var.az_region
